@@ -1,6 +1,6 @@
 import Button from "@atlaskit/button";
 import React from "react";
-import styled,{css} from "styled-components";
+import styled, { css } from "styled-components";
 import CheckIcon from "@atlaskit/icon/glyph/check";
 
 const ButtonStyled = styled(Button)`
@@ -32,7 +32,7 @@ const ButtonStyled = styled(Button)`
 export default function Todo({ todo, onCheckBtnClick }) {
   return (
     <ButtonStyled
-    isComplete = {todo.isComplete}
+      isComplete={todo.isComplete}
       shouldFitContainer
       iconAfter={
         <span className="check-icon" onClick={() => onCheckBtnClick(todo.id)}>
